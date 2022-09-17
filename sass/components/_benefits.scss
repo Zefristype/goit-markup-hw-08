@@ -1,0 +1,31 @@
+
+.benefits {
+  display: flex;
+  gap: 30px;
+  @extend %list;
+}
+
+.benefits__item {
+  position: relative;
+}
+
+.benefits__title {
+  position: absolute;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  height: 70px;
+  width: 100%;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $white-text-color;
+  background: rgba(47, 48, 58, 0.8);
+}
