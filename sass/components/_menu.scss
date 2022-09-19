@@ -1,0 +1,139 @@
+.menu-toggle {
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    
+    padding: 0;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    border: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu {
+  @media screen and (max-width: 767px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 48px 40px;
+    background-color: #ffffff;
+    z-index: 999;
+    opacity: 0;
+
+    transform: translateX(100%) scaleX(0.5);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.is-open {
+  opacity: 1;
+  transform: translateX(0) scaleX(1);
+}
+
+.menu__nav {
+  @extend %list;
+}
+
+.menu__contacts {
+  @extend %list;
+}
+
+.menu__socials {
+  @extend %list;
+}
+
+.menu__nav {
+  margin-bottom: 302px;
+}
+
+.menu__nav-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.menu__nav-link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: $black-text-color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $accent-text-color;
+  }
+}
+
+.menu__nav-link--active {
+  color: $accent-text-color;
+}
+
+.menu__contacts {
+  margin-bottom: 64px;
+}
+
+.menu__contacts-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.menu__contacts-link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: $primary-text-color;
+}
+
+.menu__contacts-link--accent {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  color: $accent-text-color;
+}
+
+.menu__socials {
+  display: flex;
+  gap: 10px;
+}
+
+.menu__socials-link {
+  width: 100%;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: $accent-text-color;
+}
+
+.menu__socials-item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
+}
+
+.menu__icon {
+  fill: $black-text-color;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: $accent-text-color;
+  }
+}

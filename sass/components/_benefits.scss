@@ -1,4 +1,11 @@
 
+.section-benefits {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+
 .benefits {
   display: flex;
   gap: 30px;

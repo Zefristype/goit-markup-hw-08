@@ -24,10 +24,16 @@
     <!-- хедер -->
     <header class="header">
       <div class="container header__container">
+        <button type="button" class="menu-toggle js-open-menu" aria-expanded="false"
+          aria-controls="mobile-menu">
+          <svg class="menu__icon" width="40" height="40">
+            <use  href="./images/sprite/menuicons.svg#icon-menu_40px" ></use>
+          </svg>
+        </button>
         <nav class="header__nav">
           <a class="logo header__logo" href="./index.html" lang="en">
-            <span class="logo__text logo__text--accent">Web</span>Studio</a
-          >
+            <span class="logo__text logo__text--accent">Web</span>Studio
+          </a>
           <ul class="site-nav header__site-nav ">
             <li class="site-nav__item">
               <a class="site-nav__link" href="./index.html">Студія</a>
@@ -63,7 +69,7 @@
           <h1 class="section__title--visually-hidden">Портфоліо</h1>
           <ul class="filter">
             <li class="filter__item">
-              <button class="filter__btn" type="button">Усі</button>
+              <button class="filter__btn " type="button">Усі</button>
             </li>
             <li class="filter__item">
               <button class="filter__btn" type="button">Веб-сайти</button>
@@ -82,11 +88,16 @@
             <li class="gallery__item">
               <a class="gallery__link" href="">
                 <div class="gallery__thumb">
-                  <img  
-                  src="./images/portfolio/crack.jpg"
-                  width="370"
-                  height="294"
+                  <picture>
+                    <source srcset="./images/portfolio/crack-mob.jpg 1x, ./images/portfolio/crack-mob2x.jpg 2x" media="(max-width:767px)">
+                    <source srcset="./images/portfolio/crack-tab.jpg 1x, ./images/portfolio/crack-tab2x.jpg 2x" media="(min-width:768px) and (max-width: 1199px)">
+                    <source srcset="./images/portfolio/crack.jpg 1x, ./images/portfolio/crack2x.jpg 2x" media="(min-width:1200px)">
+                    <img  
+                  src="./images/portfolio/crack-mob.jpg"
+                  width="450"
                   alt="Вигляду сайту Технокряк"/>
+                  </picture>
+                  
                   <div class="gallery__overlay">
                   <p class="gallery__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div>
                 </div>
@@ -100,12 +111,16 @@
             <li class="gallery__item">
               <a class="gallery__link" href="">
                 <div class="gallery__thumb">
-                  <img 
-                  src="./images/portfolio/orlean.jpg"
-                  width="370"
-                  height="294"
-                  alt="2 баскетболіста"
-                />
+                  <picture>
+                    <source srcset="./images/portfolio/orlean-mob.jpg 1x, ./images/portfolio/orlean-mob2x.jpg 2x" media="(max-width:767px)">
+                    <source srcset="./images/portfolio/orlean-tab.jpg 1x, ./images/portfolio/orlean-tab2x.jpg 2x" media="(min-width:768px) and (max-width:  1199px)">
+                    <source srcset="./images/portfolio/orlean.jpg 1x, ./images/portfolio/orlean2x.jpg 2x" media="(min-width:1200px)">
+                    <img 
+                    src="./images/portfolio/orlean-mob.jpg"
+                    width="450"
+                    alt="2 баскетболіста"/>
+                  </picture>
+                 
                 <div class="gallery__overlay">
                   <p class="gallery__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div>
                 </div>
@@ -118,12 +133,16 @@
             <li class="gallery__item">
               <a class="gallery__link" href="">
                 <div class="gallery__thumb">
-                  <img
-                  src="./images/portfolio/seafood.jpg"
-                  width="370"
-                  height="294"
-                  alt="Лого ресторана"
-                />
+                  <picture>
+                    <source srcset="./images/portfolio/seafood-mob.jpg 1x, ./images/portfolio/seafood-mob2x.jpg 2x" media="(max-width:767px)">
+                    <source srcset="./images/portfolio/seafood-tab.jpg 1x, ./images/portfolio/seafood-tab2x.jpg 2x" media="(min-width:768px) and (max-width: 1199px)">
+                    <source srcset="./images/portfolio/seafood.jpg 1x, ./images/portfolio/seafood2x.jpg 2x" media="(min-width:1200px)">
+                    <img
+                    src="./images/portfolio/seafood-mob.jpg"
+                    width="450"
+                    alt="Лого ресторана"/>
+                  </picture>
+                  
                 <div class="gallery__overlay">
                   <p class="gallery__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div>
                 </div>
@@ -136,12 +155,16 @@
             <li class="gallery__item">
               <a class="gallery__link" href="">
                 <div class="gallery__thumb">
-                  <img 
-                  src="./images/portfolio/prime.jpg"
-                  width="370"
-                  height="294"
-                  alt="Навушники"
-                />
+                  <picture>
+                    <source srcset="./images/portfolio/prime-mob.jpg 1x, ./images/portfolio/prime-mob2x.jpg 2x" media="(max-width:767px)">
+                    <source srcset="./images/portfolio/prime-tab.jpg 1x, ./images/portfolio/prime-tab2x.jpg 2x" media="(min-width:768px) and (max-width: 1199px)">
+                    <source srcset="./images/portfolio/prime.jpg 1x, ./images/portfolio/prime2x.jpg 2x" media="(min-width:1200px)">
+                    <img 
+                    src="./images/portfolio/prime-mob.jpg"
+                    width="450"
+                    alt="Навушники"/>
+                  </picture>
+                  
                 <div class="gallery__overlay">
                   <p class="gallery__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div>
                 </div>
@@ -154,12 +177,16 @@
             <li class="gallery__item">
               <a class="gallery__link" href="">
                 <div class="gallery__thumb">
-                  <img
-                  src="./images/portfolio/boxes.jpg"
-                  width="370"
-                  height="294"
-                  alt="2 коробки"
-                />
+                  <picture>
+                    <source srcset="./images/portfolio/boxes-mob.jpg 1x, ./images/portfolio/boxes-mob2x.jpg 2x" media="(max-width:767px)">
+                    <source srcset="./images/portfolio/boxes-tab.jpg 1x, ./images/portfolio/boxes-tab2x.jpg 2x" media="(min-width:768px) and (max-width: 1199px)">
+                    <source srcset="./images/portfolio/boxes.jpg 1x, ./images/portfolio/boxes2x.jpg 2x" media="(min-width:1200px)">
+                    <img
+                    src="./images/portfolio/boxes-mob.jpg"
+                    width="450"
+                    alt="2 коробки"/>
+                  </picture>
+                  
                 <div class="gallery__overlay">
                   <p class="gallery__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div>
                 </div>
@@ -172,12 +199,16 @@
             <li class="gallery__item">
               <a class="gallery__link" href="">
                 <div class="gallery__thumb">
-                  <img 
-                  src="./images/portfolio/borders.jpg"
-                  width="370"
-                  height="294"
-                  alt="Вигляд ще одного сайту"
-                />
+                  <picture>
+                    <source srcset="./images/portfolio/borders-mob.jpg 1x, ./images/portfolio/borders-mob2x.jpg 2x" media="(max-width:767px)">
+                    <source srcset="./images/portfolio/borders-tab.jpg 1x, ./images/portfolio/borders-tab2x.jpg 2x" media="(min-width:768px) and (max-width: 1199px)">
+                    <source srcset="./images/portfolio/borders.jpg 1x, ./images/portfolio/borders2x.jpg 2x" media="(min-width:1200px)">
+                    <img 
+                    src="./images/portfolio/borders-mob.jpg"
+                    width="450"
+                    alt="Вигляд ще одного сайту"/>
+                  </picture>
+                  
                 <div class="gallery__overlay">
                   <p class="gallery__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div>
                 </div>
@@ -190,12 +221,16 @@
             <li class="gallery__item">
               <a class="gallery__link" href="">
                 <div class="gallery__thumb">
-                  <img 
-                  src="./images/portfolio/limited.jpg"
-                  width="370"
-                  height="294"
-                  alt="Вигляд книги чи журналу"
-                />
+                  <picture>
+                    <source srcset="./images/portfolio/limited-mob.jpg 1x, ./images/portfolio/limited-mob2x.jpg 2x" media="(max-width: 767px)">
+                    <source srcset="./images/portfolio/limited-tab.jpg 1x, ./images/portfolio/limited-tab2x.jpg 2x" media="(min-width: 768px) and (max-width: 1199px)">
+                    <source srcset="./images/portfolio/limited.jpg 1x, ./images/portfolio/limited2x.jpg 2x" media="(min-width:1200px)">
+                      <img 
+                      src="./images/portfolio/limited-mob.jpg"
+                      width="450"
+                      alt="Вигляд книги чи журналу"/>
+                  </picture>
+
                 <div class="gallery__overlay">
                   <p class="gallery__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div>
                 </div>
@@ -208,12 +243,16 @@
             <li class="gallery__item">
               <a class="gallery__link" href="">
                 <div class="gallery__thumb">
-                  <img 
-                  src="./images/portfolio/lab.jpg"
-                  width="370"
-                  height="294"
-                  alt="Бірка"
-                />
+                  <picture>
+                    <source srcset="./images/portfolio/lab-mob.jpg 1x, ./images/portfolio/lab-mob2x.jpg 2x" media="(max-width:767px)">
+                    <source srcset="./images/portfolio/lab-tab.jpg 1x, ./images/portfolio/lab-tab2x.jpg 2x" media="(min-width:768px) and (max-width: 1199px)">
+                    <source srcset="./images/portfolio/lab.jpg 1x, ./images/portfolio/lab2x.jpg 2x" media="(min-width:1200px)">
+                    <img 
+                    src="./images/portfolio/lab-mob.jpg"
+                    width="450"
+                    alt="Бірка"/>
+                  </picture>
+                  
                 <div class="gallery__overlay">
                   <p class="gallery__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div>
                 </div>
@@ -226,12 +265,16 @@
             <li class="gallery__item">
               <a class="gallery__link" href="">
                 <div class="gallery__thumb">
-                  <img 
-                  src="./images/portfolio/growing.jpg"
-                  width="370"
-                  height="294"
-                  alt="Людина працює за комп'ютером"
-                />
+                  <picture>
+                    <source srcset="./images/portfolio/growing-mob.jpg 1x, ./images/portfolio/growing-mob2x.jpg 2x" media="(max-width:767px)">
+                    <source srcset="./images/portfolio/growing-tab.jpg 1x, ./images/portfolio/growing-tab2x.jpg 2x" media="(min-width:768px) and (max-width: 1199px)">
+                    <source srcset="./images/portfolio/growing.jpg 1x, ./images/portfolio/growing2x.jpg 2x" media="(min-width:1200px)">
+                    <img 
+                    src="./images/portfolio/growing-mob.jpg"
+                    width="450"
+                    alt="Людина працює за комп'ютером"/>
+                  </picture>
+                  
                 <div class="gallery__overlay">
                   <p class="gallery__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div>
                 </div>
@@ -308,5 +351,47 @@
         </div>
       </div>
     </footer>
+    <div class="menu js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu__icon" width="40" height="40">
+          <use href="./images/sprite/menuicons.svg#icon-close_40px"></use>
+        </svg>
+      </button>
+      <ul class="menu__nav ">
+          <li class="menu__nav-item">
+            <a class="menu__nav-link " href="./index.html">Студія</a>
+          </li>
+          <li class="menu__nav-item">
+            <a class="menu__nav-link menu__nav-link--active" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="menu__nav-item">
+            <a class="menu__nav-link" href="">Контакти</a>
+          </li>
+        </ul>
+        <ul class="menu__contacts ">
+          <li class="menu__contacts-item">
+            <a class="menu__contacts-link menu__contacts-link--accent" href="mailto:info@devstudio.com" lang="en">
+              info@devstudio.com</a>
+          </li>
+          <li class="menu__contacts-item">
+            <a class="menu__contacts-link" href="tel:+380961111111">
+              +38 096 111 11 11</a>
+          </li>
+        </ul>
+        <ul class="menu__socials">
+          <li class="menu__socials-item"><a href="" class="menu__socials-link">Instagram</a></li>
+          <li class="menu__socials-item"><a href="" class="menu__socials-link">Twitter</a></li>
+          <li class="menu__socials-item"><a href="" class="menu__socials-link">Facebook</a></li>
+          <li class="menu__socials-item"><a href="" class="menu__socials-link">LinkedIn</a></li>
+        </ul>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
