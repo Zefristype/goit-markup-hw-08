@@ -343,12 +343,12 @@ body {
 
 @media screen and (min-width: 768px) {
   .feature__item {
-    width: 354px;
+    width: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
   .feature__item {
-    width: 270px;
+    width: calc((100% - 90px) / 4);
   }
 }
 
@@ -439,12 +439,12 @@ body {
 }
 @media screen and (min-width: 768px) {
   .team__item {
-    width: 354px;
+    width: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
   .team__item {
-    width: 270px;
+    width: calc((100% - 90px) / 4);
   }
 }
 
@@ -522,17 +522,17 @@ body {
 }
 @media screen and (min-width: 480px) {
   .clients__item {
-    width: 210px;
+    width: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 768px) {
   .clients__item {
-    width: 226px;
+    width: calc((100% - 60px) / 3);
   }
 }
 @media screen and (min-width: 1200px) {
   .clients__item {
-    width: 170px;
+    width: calc((100% - 150px) / 6);
   }
 }
 
@@ -1042,12 +1042,12 @@ body {
 
 @media screen and (min-width: 768px) {
   .gallery__item {
-    width: 354px;
+    width: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
   .gallery__item {
-    width: 370px;
+    width: calc((100% - 60px) / 3);
   }
 }
 
