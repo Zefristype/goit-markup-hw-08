@@ -177,9 +177,9 @@
           <ul class="team">
             <li class="team__item">
               <picture>
-                <source srcset="./images/main/Igor-mob.jpg 1x, ./images/main/Igor-mob2x.jpg 2x" media="(max-width: 767px)">
-                <source srcset="./images/main/Igor-tab.jpg 1x, ./images/main/Igor-tab2x.jpg 2x" media="(min-width: 768px) and (max-width: 1199px)">
                 <source srcset="./images/main/Igor.jpg 1x, ./images/main/Igor2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./images/main/Igor-tab.jpg 1x, ./images/main/Igor-tab2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./images/main/Igor-mob.jpg 1x, ./images/main/Igor-mob2x.jpg 2x" media="(max-width: 767px)">
                 <img
                   src="images/main/Igor-mob.jpg"
                 
@@ -209,9 +209,9 @@
             </li>
             <li class="team__item">
               <picture>
-                <source srcset="./images/main/Olga-mob.jpg 1x, ./images/main/Olga-mob2x.jpg 2x" media="(max-width: 767px)">
-                <source srcset="./images/main/Olga-tab.jpg 1x, ./images/main/Olga-tab2x.jpg 2x" media="(min-width: 768px) and (max-width: 1199px)">
                 <source srcset="./images/main/Olga.jpg 1x, ./images/main/Olga2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./images/main/Olga-tab.jpg 1x, ./images/main/Olga-tab2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./images/main/Olga-mob.jpg 1x, ./images/main/Olga-mob2x.jpg 2x" media="(max-width: 767px)">
                 <img
                   src="images/main/Olga-mob.jpg"
                 
@@ -240,9 +240,9 @@
             </li>
             <li class="team__item">
               <picture>
-                <source srcset="./images/main/Mukola-mob.jpg 1x, ./images/main/Mukola-mob2x.jpg 2x" media="(max-width: 767px)">
-                <source srcset="./images/main/Mukola-tab.jpg 1x, ./images/main/Mukola-tab2x.jpg 2x" media="(min-width: 768px) and (max-width: 1199px)">
                 <source srcset="./images/main/Mukola.jpg 1x, ./images/main/Mukola2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./images/main/Mukola-tab.jpg 1x, ./images/main/Mukola-tab2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./images/main/Mukola-mob.jpg 1x, ./images/main/Mukola-mob2x.jpg 2x" media="(max-width: 767px)">
                 <img
                   src="images/main/Mukola-mob.jpg"
                 
@@ -271,9 +271,9 @@
             </li>
             <li class="team__item">
               <picture>
-                <source srcset="./images/main/Mihail-mob.jpg 1x, ./images/main/Mihail-mob2x.jpg 2x" media="(max-width: 767px)">
-                <source srcset="./images/main/Mihail-tab.jpg 1x, ./images/main/Mihail-tab2x.jpg 2x" media="(min-width: 768px) and (max-width: 1199px)">
                 <source srcset="./images/main/Mihail.jpg 1x, ./images/main/Mihail2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./images/main/Mihail-tab.jpg 1x, ./images/main/Mihail-tab2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./images/main/Mihail-mob.jpg 1x, ./images/main/Mihail-mob2x.jpg 2x" media="(max-width: 767px)">
                 <img
                 src="images/main/Mihail-mob.jpg"
                
@@ -333,11 +333,9 @@
       <div class="backdrop is-hidden" data-modal>
         <div class="modal backdrop__modal">
           <button class="modal__close" data-modal-close>
-            <div class="modal__icon-box">
-              <svg class="modal__icon-close">
-                <use  href="./images/sprite/close.svg#close" width="11" height="11"></use>
-              </svg>
-            </div>
+            <svg class="modal__icon-close" width="11" height="11">
+              <use  href="./images/sprite/close.svg#close"></use>
+            </svg>
           </button>
           <form class="form modal__form">
             <h3 class="form__title">Залиште свої дані, ми вам передзвонимо</h3>
@@ -357,6 +355,7 @@
                 <svg class="form__icon" width="18" height="18">
                   <use href="./images/sprite/spriteforforms.svg#icon-phone-black"></use>
                 </svg>
+              </span>
             </label>
             <label class="form__field">
               Пошта
@@ -365,6 +364,7 @@
                 <svg class="form__icon" width="18" height="18">
                   <use href="./images/sprite/spriteforforms.svg#icon-email-black"></use>
                 </svg>
+              </span>
             </label>
             <label class="form__field">
               Коментар
@@ -461,22 +461,24 @@
             <a class="menu__nav-link" href="">Контакти</a>
           </li>
         </ul>
-        <ul class="menu__contacts ">
-          <li class="menu__contacts-item">
-            <a class="menu__contacts-link menu__contacts-link--accent" href="mailto:info@devstudio.com" lang="en">
-              info@devstudio.com</a>
-          </li>
-          <li class="menu__contacts-item">
-            <a class="menu__contacts-link" href="tel:+380961111111">
-              +38 096 111 11 11</a>
-          </li>
-        </ul>
-        <ul class="menu__socials">
-          <li class="menu__socials-item"><a href="" class="menu__socials-link">Instagram</a></li>
-          <li class="menu__socials-item"><a href="" class="menu__socials-link">Twitter</a></li>
-          <li class="menu__socials-item"><a href="" class="menu__socials-link">Facebook</a></li>
-          <li class="menu__socials-item"><a href="" class="menu__socials-link">LinkedIn</a></li>
-        </ul>
+        <div class="menu__wrapper">
+          <ul class="menu__contacts ">
+            <li class="menu__contacts-item">
+              <a class="menu__contacts-link menu__contacts-link--accent" href="mailto:info@devstudio.com" lang="en">
+                info@devstudio.com</a>
+            </li>
+            <li class="menu__contacts-item">
+              <a class="menu__contacts-link" href="tel:+380961111111">
+                +38 096 111 11 11</a>
+            </li>
+          </ul>
+          <ul class="menu__socials">
+            <li class="menu__socials-item"><a href="" class="menu__socials-link">Instagram</a></li>
+            <li class="menu__socials-item"><a href="" class="menu__socials-link">Twitter</a></li>
+            <li class="menu__socials-item"><a href="" class="menu__socials-link">Facebook</a></li>
+            <li class="menu__socials-item"><a href="" class="menu__socials-link">LinkedIn</a></li>
+          </ul>
+        </div>
     </div>
 
     <script
